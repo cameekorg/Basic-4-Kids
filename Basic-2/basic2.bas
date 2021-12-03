@@ -1,0 +1,39 @@
+SCREEN 13
+
+NEBE
+
+TRAVA
+
+STROM 10, 100
+
+STROM 90, 110
+
+STROM 200, 100
+
+END
+
+
+
+SUB NEBE
+
+    LINE (0, 0)-(320, 150), 102, BF
+
+END SUB
+
+
+
+SUB TRAVA
+
+    LINE (0, 150)-(320, 200), 120, BF
+
+END SUB
+
+
+
+SUB STROM (X, Y)
+
+    LINE (0 + X, 0 + Y)-(30 + X, 30 + Y), 122, BF
+
+    LINE (10 + X, 30 + Y)-(20 + X, 60 + Y), 113, BF
+
+END SUB

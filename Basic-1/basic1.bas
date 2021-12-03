@@ -1,0 +1,15 @@
+SCREEN 13
+
+CTVEREC 50, 50
+
+CTVEREC 100, 60
+
+PRINT "Ahoj"
+
+END
+
+SUB CTVEREC (X, Y)
+
+    LINE (0 + X, 0 + Y)-(10 + X, 10 + Y), 100, B
+
+END SUB
