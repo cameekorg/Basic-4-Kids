@@ -1,0 +1,69 @@
+SCREEN 13
+
+NEBE
+
+TRAVA
+
+STROM 10, 100
+
+STROM 90, 110
+
+STROM 200, 100
+
+STROM 300, 110
+
+MRAK 160, 10
+
+MRAK 40, 60
+
+MRAK 50, 50
+
+MRAK 60, 60
+
+MRAK 200, 40
+
+MRAK 220, 50
+
+MRAK 240, 50
+
+END
+
+
+
+SUB NEBE
+
+    LINE (0, 0)-(320, 150), 78, BF
+
+END SUB
+
+
+
+SUB TRAVA
+
+    LINE (0, 150)-(320, 200), 120, BF
+
+END SUB
+
+
+
+SUB STROM (X, Y)
+
+    LINE (0 + X, 0 + Y)-(30 + X, 30 + Y), 122, BF
+
+    LINE (10 + X, 30 + Y)-(20 + X, 60 + Y), 113, BF
+
+END SUB
+
+
+SUB MRAK (X, Y)
+
+    LINE (0 + X, 0 + Y)-(10 + X, 10 + Y), 30, BF
+    LINE (0 + X, 10 + Y)-(30 + X, 20 + Y), 30, BF
+    LINE (10 + X, 20 + Y)-(20 + X, 30 + Y), 30, BF
+
+
+END SUB
+
+
+
+
